@@ -1,0 +1,1 @@
+1. Ervoor zorgen dat geen valse beloften worden gemaakt met de mogelijke opbrengst vs. de daadwerkelijke opbrengst.
