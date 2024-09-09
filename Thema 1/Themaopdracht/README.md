@@ -112,3 +112,6 @@ Uitrekenen: de groene zinnen (mn de _specific heat loss_)
 De kern van het probleem is: het huis koelt af, als je een huis hebt - vanuitgaande dat al je apparatuur uitstaat en de zon schijnt niet - stel je gaat naar huis, het is 20graden binnen, 10 buiten, als je goed geisoleerd huis hebt, is het 's ochtends 19 graden, slechtgeisoleerd, dan is het een stuk lager.
 
 Thermische traagheid: hoeveel tijd gaat erover om het verschil tussen de binnentemperatuur en buiten- te halveren (de deltatemperatuur)
+
+Op de ELO staat een stappenplan.
+Vertrouwelijksheidverklaring komt op Teams, zorg dat deze morgenochtend ingevuld is.
