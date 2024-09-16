@@ -16,3 +16,15 @@ Denkvraag: Welke morele vragen kun je hierbij stellen?
 
 
 Neem de uitwerking mee naar de volgende workshop.
+
+Tips:
+- Gebruik techsites
+- Kan binnen zes jaar geleden en nu (2018-2024)
+
+## Workshop 2
+### Waarden ivm Machine Learning
+Pro (niet-schaden): Voorkomen dat arme mensen hun banen kwijtraken
+Tegen (efficientie): Goede controle van AI kan ook als baan fungeren, nieuwe banen zullen ook opspringen
+
+Waarde (weldoen): gebruik van auteursrechtelijk beschermde kunst moet eigenlijk compensatie tegenhangen
+Tegen (efficientie): kan inspiratie zijn voor artiesten
