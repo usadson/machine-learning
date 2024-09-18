@@ -3,3 +3,7 @@ data/
 /Persoonlijk
 *.pptx
 ~*
+
+tf/
+imdb_crop
+*.mat
