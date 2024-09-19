@@ -1,3 +1,3 @@
 #!/bin/sh
-pip install tensorflow[and-cuda] matplotlib pandas numpy scipy ipykernel scikit-learn pyarrow
+pip install tensorflow[and-cuda] matplotlib pandas numpy scipy ipykernel scikit-learn pyarrow pyyaml h5py
 conda install -c conda-forge opencv
