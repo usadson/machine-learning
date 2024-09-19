@@ -7,3 +7,4 @@ data/
 tf/
 imdb_crop
 *.mat
+*.feather
