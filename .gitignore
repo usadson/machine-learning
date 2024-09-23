@@ -8,3 +8,4 @@ tf/
 imdb_crop
 *.mat
 *.feather
+*.zip
