@@ -9,3 +9,4 @@ imdb_crop
 *.mat
 *.feather
 *.zip
+*.out
