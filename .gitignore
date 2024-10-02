@@ -10,3 +10,4 @@ imdb_crop
 *.feather
 *.zip
 *.xlsx
+.idea
