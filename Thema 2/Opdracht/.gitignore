@@ -1,0 +1,7 @@
+logs
+*.yaml
+*.jpg
+*.png
+*.db
+*.sqlite
+*.zip

@@ -11,3 +11,5 @@ imdb_crop
 *.feather
 *.zip
 *.out
+*.xlsx
+.idea

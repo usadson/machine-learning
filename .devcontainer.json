@@ -1,15 +1,21 @@
 {
-  "name": "Tensorflow with Jupyter (GPU enabled)",
-  "build": { "dockerfile": "docker/Dockerfile" },
-  "forwardPorts": [5000],
-  "postStartCommand": "nohup bash -c 'jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root --NotebookApp.token=jupdevtoken &'",
-  "runArgs": [
-    "--gpus",
-    "all"
-  ],
-  "extensions": [
-    "ms-python.python",
-    "ms-python.vscode-pylance",
-    "ms-toolsai.jupyter"
-  ]
-}
+    "name": "Tensorflow with Jupyter (GPU enabled)",
+    "build": { "dockerfile": "docker/Dockerfile" },
+    "forwardPorts": [5000],
+    "postStartCommand": "nohup bash -c 'jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root --NotebookApp.token=jupdevtoken &'",
+    "runArgs": [
+      "--gpus",
+      "all"
+    ],
+    "extensions": [
+      "ms-python.python",
+      "ms-python.pylint",
+      "ms-python.vscode-pylance",
+      "ms-toolsai.jupyter",
+      "ms-azuretools.vscode-docker",
+      "kevinrose.vsc-python-indent",
+      "github.copilot",
+      "github.copilot-chat",
+      "tomoki1207.pdf"
+    ]
+  }
