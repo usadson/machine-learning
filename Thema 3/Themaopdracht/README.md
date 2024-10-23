@@ -21,3 +21,6 @@ dmv RAG: Retrieval Augmented Generation
 - geen notebooks
 - maar een werkende gui
 - met flask bijv.
+
+## Onderzoekje
+- [GGUF](https://github.com/ggerganov/ggml/blob/master/docs/gguf.md) is een opslagformaat
