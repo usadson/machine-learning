@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Huiswerk Workshop 1</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="huiswerk-workshop-1">Huiswerk Workshop 1</h1>
+<h2 id="dilemma-1-data-scraping">Dilemma 1: Data Scraping</h2>
+<blockquote>
+<p>Mag je als bedrijf zomaar het hele internet afgaan om alle informatie van websites af te schrapen?</p>
+</blockquote>
+<p><strong>Voor:</strong> Innovatie. De methode Data Scraping wordt veel gebruik om corpora voor  Large Language-modellen op te bouwen, zodat deze gebruikt kunnen worden als traindata.</p>
+<p><strong>Tegen:</strong> Onrechtmatig gebruik. Ik zie elke week wel berichten verschijnen op HackerNews over bijvoorbeeld <a href="https://www.gamedeveloper.com/business/-this-was-essentially-a-two-week-long-ddos-attack-game-ui-database-slowdown-caused-by-openai-scraping">DDoS-aanvallen (GameDeveloper.com)</a>, <a href="https://www.theregister.com/2024/10/22/publishers_sue_perplexity_ai/">gestarte rechtszaken door uitgevers (The Register)</a> en <a href="https://www.theregister.com/2024/07/03/cloudflare_ai_blocks/">bedrijven die zich weren tegen scrapers</a>.</p>
+<p><strong>Morele grens:</strong> Ik vind dat bedrijven altijd toestemming moeten krijgen om op grote schaal informatie te scrapen. Het maakt het lastig dat de kant van het verhaal is dat als we het nu zouden gaan verbieden, we oneerlijk zijn jegens partijen die nog niet eerder gescrapet hebben vergeleken met bedrijven zoals OpenAI die het al wel gedaan hebben. Daarom zouden we bijvoorbeeld moeten stellen dat huidige bedrijven deze informatie zelf ook moeten aanbieden (net zoals bij de <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html#section3">GNU GPL 2.0, lid b van artikel 3</a>). Of dat bedrijven deze informatie moeten verwijderen uit hun dataset en hun modellen moeten hertrainen.</p>
+<p><strong>Bron:</strong> artikel van Fortune, <a href="https://fortune.com/2024/10/03/bytedance-tiktok-bytespider-scraper-bot">TikTok’s parent launched a web scraper that’s gobbling up the world’s online data 25 times faster than OpenAI</a></p>
+<h2 id="dilemma-2-windows-recall">Dilemma 2: Windows Recall</h2>
+<blockquote>
+<p>Hoe ver mag een technologiebedrijf gaan in het aanbieden van functies die het digitale leven van gebruikers vastleggen en doorzoekbaar maken?</p>
+</blockquote>
+<p><strong>Voor:</strong> Op het gebied van <em>productiviteit</em> maakt dit het voor veel individuelen makkelijker om bijvoorbeeld een logboek op te stellen, als ze iets vergeten op te slaan zijn kunnen ze dit a.h.w. terughalen en kan tijd besparen met het vinden van bepaalde informatiestukken.</p>
+<p><strong>Tegen:</strong> De waarde hierbij is <em>privacy</em>, want gebruikers hebben recht op het leiden van hun eigen leven zonder dat anderen daar zomaar inzicht op hebben. Daarnaast gok ik dat het <a href="https://en.wikipedia.org/wiki/Nothing_to_hide_argument"><em>If you have nothing to hide you have nothing to fear</em></a>-argument gebruikt zal worden om dit te ontkrachten.</p>
+<p><strong>Morele grens:</strong> Ook al vertelt Microsoft dat het alleen op het apparaat zal blijven, ben ik bang dat op het gebied van transparantie en controle, het bedrijf zomaar de knop kan omdraaien, gezien dat het bedrijf deze feature eerst ook opt-out wilde maken, maar na <a href="https://tweakers.net/nieuws/222964/microsoft-maakt-recall-functie-opt-in-na-kritiek-van-privacyexperts.html">hevige kritiek</a> dit toch opt-in heeft gemaakt. Daarom zou ik eigenlijk eerst een soort bewezen, veilige oplossing willen zien waarvan veiligheidsexperts kunnen bewijzen dat het integer is, zoals bij Apple's <a href="https://security.apple.com/documentation/private-cloud-compute">Private Cloud Compute</a>.</p>
+<p><strong>Bron:</strong> <a href="https://tweakers.net/nieuws/228258/microsoft-stelt-release-van-omstreden-recall-opnieuw-uit-nu-tot-december.html">https://tweakers.net/nieuws/228258/microsoft-stelt-release-van-omstreden-recall-opnieuw-uit-nu-tot-december.html</a></p>
+<h2 id="dilemma-3-energieverbruik">Dilemma 3: Energieverbruik</h2>
+<blockquote>
+<p>Mag het klimaatplan geschrapt worden om plaats te maken voor energieslurpende Large-Language-modellen?</p>
+</blockquote>
+<p><strong>Voor:</strong> We kunnen met LLM's <em>innoveren</em> om belangrijke problemen op te lossen en <u>juist hiermee</u> nieuwe technologieën ontwikkelen zodat we de emissies naar beneden kunnen halen.</p>
+<p><strong>Tegen:</strong> Duurzaamheid. Het idee dat we 'de klimaatdoelen toch niet gaan halen' kan leiden tot een gevaarlijke zelfvervullende voorspelling en ontmoedigt investeringen in duurzame technologieën en processen. Daarnaast kunnen we het aantal problemen dat opgelost is met en zonder AI niet wetenschappelijk bepalen en tegenover elkaar zetten, dus de effectiviteitsclaim die dikwijls wordt opgegooid is niet te bewijzen.</p>
+<p><strong>Morele grens:</strong> Ik vind dat technologische vooruitgang niet ten koste mag gaan van de gezondheid van onze planeet. Het bouwen van AI-datacenters moet gepaard gaan met verantwoorde keuzes rondom duurzaamheid en energieverbruik. Bedrijven die datacenters willen bouwen moeten klimaatneutraal zijn om dit te mogen uitvoeren. Daarom vind ik het zelf ook lastig om enthousiast te worden van nieuwe technologieën zoals generatieve afbeeldingen en video's.</p>
+<p><strong>Bron:</strong> Artikel van The Register, <a href="https://www.theregister.com/2024/10/08/eric_schmidt_speech/">Eric Schmidt: Build more AI datacenters, we aren't going to 'hit climate goals anyway'</a></p>
+
+            
+            
+        </body>
+        </html>

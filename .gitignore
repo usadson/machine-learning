@@ -13,3 +13,6 @@ imdb_crop
 *.out
 *.xlsx
 .idea
+__pycache__
+*.wav
+*.mp3
