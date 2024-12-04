@@ -16,3 +16,4 @@ imdb_crop
 __pycache__
 *.wav
 *.mp3
+*.npy
