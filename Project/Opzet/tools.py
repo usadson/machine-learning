@@ -113,3 +113,20 @@ def showAudio(audio):
     else:
         y, sr = audio
     IPython.display.display(IPython.display.Audio(data=y, rate=sr))
+
+def getAudioAfterSec(file: str, secs, max_secs=None, sr=22050):
+    y, sr = librosa.load(file, sr=sr)
+    y = y[int(sr * secs):]
+    if max_secs != None:
+        y = y[:int(sr * max_secs)]
+    return np.array(y), sr
+
+def floatRange(start, end, step):
+    return (x * step for x in range(int(start / step), int(end / step)))
+
+# Sorteer twee arrays op dezelfde manier
+def unison_shuffled_copies(a, b):
+    assert len(a) == len(b)
+    p = np.random.permutation(len(a))
+    return np.array(a, dtype=object)[p].tolist(), np.array(b, dtype=object)[p].tolist()
+
