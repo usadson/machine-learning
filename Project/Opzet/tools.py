@@ -6,13 +6,14 @@ import IPython
 import os
 import math
 from sklearn.model_selection import train_test_split
+from scipy.signal import butter, filtfilt, sosfilt, sosfreqz
 
 import tensorflow as tf
 from tqdm import tqdm
 from tensorflow.keras import layers, Model
 import wave
 
-def mel_spectrogram(audio_files, callback=None):
+def mel_spectrogram(audio_files, callback=None, min_y=0, max_y=5000):
     # plt.figure(figsize=(15, 10))
     # plt.title('Geluid')
     # plt.ylabel('Frequentie (Hz)')
@@ -29,6 +30,7 @@ def mel_spectrogram(audio_files, callback=None):
 
         # librosa.display.specshow(S_db)
         fig, ax = plt.subplots(1, 1, figsize=(15, 10))
+        ax.set_ylim([min_y, max_y])
         img = librosa.display.specshow(S_db, sr=sr, x_axis='time', y_axis='linear', ax=ax)
         ax.set(title=audio_file)
         fig.colorbar(img, ax=ax, format="%+2.f dB")
@@ -129,4 +131,21 @@ def unison_shuffled_copies(a, b):
     assert len(a) == len(b)
     p = np.random.permutation(len(a))
     return np.array(a, dtype=object)[p].tolist(), np.array(b, dtype=object)[p].tolist()
+
+
+def butter_bandpass(lowcut, highcut, fs, order=5):
+    nyquist = 0.5 * fs
+    low = lowcut / nyquist
+    high = highcut / nyquist
+    b, a = butter(order, [low, high], btype='band')
+    return b, a
+ 
+def apply_bandpass_filter(data, lowcut = 750, highcut = 3000, fs = 16000, order=5):
+    b, a = butter_bandpass(lowcut, highcut, fs, order)
+    return filtfilt(b, a, data)
+
+def bandstop_filter(audio, lowcut, highcut, sr, order=4):
+    sos = butter(order, [lowcut, highcut], btype='bandstop', fs=sr, output='sos')
+    filtered_audio = sosfilt(sos, audio)
+    return filtered_audio
 
